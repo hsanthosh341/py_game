@@ -33,7 +33,7 @@ while game_is_on:
         snake.extend()
         scoreboard.increase_score()
 
-    #detect collision with food
+    #detect collision with wall
     if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290 :
         game_is_on = False
         scoreboard.game_over()
